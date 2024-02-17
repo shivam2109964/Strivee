@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:strive/Events/Event4.dart';
+import 'package:strive/Events/firstEvent.dart';
+import 'package:strive/OnBoard/OnBoard.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: EventFour(),
+        body: FirstEvent(),
       ),
     );
   }

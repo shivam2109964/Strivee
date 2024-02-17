@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:strive/OnBoard/OnBoard.dart';
 
 class FirstEvent extends StatefulWidget {
   const FirstEvent({super.key});
@@ -98,7 +99,14 @@ class _FirstEventState extends State<FirstEvent> {
                                   ),
                                 ),
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => OnBoard(),
+                                  ),
+                                );
+                              },
                               child: Row(
                                 children: <Widget>[
                                   Text(
