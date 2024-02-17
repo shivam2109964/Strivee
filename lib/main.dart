@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:strive/Events/Event2.dart';
-import 'package:strive/Events/firstEvent.dart';
+import 'package:strive/Events/Event3.dart';
+
+
 
 void main() => runApp(MyApp());
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: EventTwo(),
+        body: EventThree(),
       ),
     );
   }

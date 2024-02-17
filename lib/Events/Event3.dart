@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class EventTwo extends StatelessWidget {
-  const EventTwo({Key? key}) : super(key: key);
+class EventThree extends StatelessWidget {
+  const EventThree({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,32 +14,23 @@ class EventTwo extends StatelessWidget {
           Center(
             child: Stack(
               children: <Widget>[
-                Image.asset(
-                  'assets/imgthee.png',
-                ),
-                Image.asset(
-                  'assets/EventTwoIcon.png',
-                ),
+                Image.asset('assets/eventthreeimgg.png'),
+                Image.asset('assets/eventThreeimg.png'),
               ],
             ),
           ),
           Text(
-            "Enjoy the Game",
-            style: GoogleFonts.aclonica(
-              fontSize: 20,
-            ),
+            "Your Pocket Money",
+            style: GoogleFonts.aclonica(fontSize: 20),
           ),
           const Padding(
             padding: EdgeInsets.all(
-              9,
+              20,
             ),
             child: Text(
-              "Immerse yourself in the thrill of gaming and\n enjoy every moment of it!",
+              "All the games in this app are extremely\nenjoyable,\nand you can earn real money while playing\nthem.\nIt's an easy way to generate pocket money for yourself. ",
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontFamily: 'agencyfb',
-                fontSize: 14,
-              ),
+              style: TextStyle(fontFamily: 'agencyfb', fontSize: 14),
             ),
           ),
         ],
