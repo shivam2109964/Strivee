@@ -26,6 +26,8 @@ flutter:
     - assets/imgthee.png
     - assets/eventThreeimg.png
     - assets/eventthreeimgg.png
+    - assets/refer.png
+    - assets/referlo.png
   fonts:
     - family: agencyfb
       fonts:
