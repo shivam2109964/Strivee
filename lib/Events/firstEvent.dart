@@ -8,35 +8,64 @@ class FirstEvent extends StatefulWidget {
 }
 
 class _FirstEventState extends State<FirstEvent> {
-  late double heigth, width;
-
   @override
   Widget build(BuildContext context) {
-    heigth = MediaQuery.of(context).size.height;
-    width = MediaQuery.of(context).size.width;
+    var _mediaQuary = MediaQuery.of(context);
     return Scaffold(
-      body: Stack(
-        children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Container(
-                height: heigth * .5,
-                decoration: const BoxDecoration(color: Colors.black),
-              ),
-            ],
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Container(
-                height: heigth * .5,
-                decoration: const BoxDecoration(color: Colors.red),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
+        backgroundColor: const Color.fromARGB(
+          255,
+          205,
+          0,
+          0,
+        ),
+        body: Stack(
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Container(
+                  decoration: const BoxDecoration(
+                    color: Colors.black,
+                  ),
+                  child: Container(
+                    height: _mediaQuary.size.height * 0.5,
+                    width: _mediaQuary.size.width * 1,
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        bottomRight: Radius.circular(
+                          85,
+                        ),
+                      ),
+                    ),
+                    child: null,
+                  ),
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Container(
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  child: Container(
+                    height: _mediaQuary.size.height * 0.5,
+                    width: _mediaQuary.size.width * 1,
+                    decoration: const BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(
+                          85,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ));
   }
 }

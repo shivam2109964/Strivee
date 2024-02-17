@@ -11,11 +11,9 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: "Strive",
       debugShowCheckedModeBanner: false,
-      home: SafeArea(
-        child: Scaffold(
-          backgroundColor: Colors.white,
-          body: FirstEvent(),
-        ),
+      home: Scaffold(
+        backgroundColor: Colors.white,
+        body: FirstEvent(),
       ),
     );
   }
