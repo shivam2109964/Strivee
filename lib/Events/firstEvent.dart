@@ -38,7 +38,7 @@ class _FirstEventState extends State<FirstEvent> {
                         ),
                       ),
                     ),
-                    child: null,
+                    child: Image.asset('assets/icon.png', alignment: Alignment.bottomCenter,) ,
                   ),
                 )
               ],
