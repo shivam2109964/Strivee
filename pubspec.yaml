@@ -7,6 +7,7 @@ environment:
   sdk: ">=3.2.6 <4.0.0"
 
 dependencies:
+  dynamic_fonts: ^2.2.0
   flutter:
     sdk: flutter
   google_fonts: ^6.1.0
@@ -21,3 +22,12 @@ flutter:
   assets:
     - assets/icon.png
     - assets/rec.png
+    - assets/EventTwoIcon.png
+    - assets/imgthee.png
+  fonts:
+    - family: agencyfb
+      fonts:
+        - asset: fonts/agencyfb.ttf
+  
+  
+
