@@ -86,36 +86,33 @@ class _FirstEventState extends State<FirstEvent> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.all(20),
-                          child: ElevatedButton(
-                            style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(
-                                const Color(
-                                  0xFF002A69,
+                          padding: const EdgeInsets.all(20),
+                          child: SizedBox(
+                            height: 45.30,
+                            width: 140,
+                            child: ElevatedButton(
+                              style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(
+                                  const Color(
+                                    0xFF002A69,
+                                  ),
                                 ),
                               ),
-                            ),
-                            onPressed: () {},
-                            child: Row(
-                              children: <Widget>[
-                                const Padding(
-                                    padding: EdgeInsets.only(right: 7)),
-                                Text(
-                                  "Let's Start",
-                                  style: GoogleFonts.actor(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white),
-                                  textAlign: TextAlign.center,
-                                ),
-                                const Padding(
-                                  padding: EdgeInsets.only(
-                                    left: 20,
+                              onPressed: () {},
+                              child: Row(
+                                children: <Widget>[
+                                  Text(
+                                    "Let's Start ",
+                                    style: GoogleFonts.actor(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white),
+                                    textAlign: TextAlign.center,
                                   ),
-                                  child: Icon(Icons.arrow_right_alt_sharp,
-                                      color: Colors.white, size: 33),
-                                ),
-                              ],
+                                  const Icon(Icons.arrow_right_alt_sharp,
+                                      color: Colors.white, size: 25),
+                                ],
+                              ),
                             ),
                           ),
                         ),
