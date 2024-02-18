@@ -14,32 +14,44 @@ class EventTwo extends StatelessWidget {
           Center(
             child: Stack(
               children: <Widget>[
-                Image.asset(
-                  'assets/imgthee.png',
+                Container(
+                  child: Image.asset(
+                    'assets/imgthee.png',
+                  ),
                 ),
-                Image.asset(
-                  'assets/EventTwoIcon.png',
+                Positioned(
+                  top: -370, // Middle of the first container
+                  left: -350, // Middle of the first container
+                  child: Container(
+                    child: Transform.scale(
+                        scale: 0.37 ,
+                        child: Image.asset(
+                        'assets/eventtwo.png',
+                       
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),
           ),
           Text(
-            "Enjoy the Game",
+            "Refer and Earn",
             style: GoogleFonts.aclonica(
               fontSize: 20,
             ),
           ),
           const Padding(
             padding: EdgeInsets.all(
-              9,
+              20,
             ),
             child: Text(
-              "Immerse yourself in the thrill of gaming and\n enjoy every moment of it!",
-              textAlign: TextAlign.center,
+              "Refer friends and earn up to 700 rupees\nwith every successful referral!",
               style: TextStyle(
-                fontFamily: 'agencyfb',
                 fontSize: 14,
+                fontFamily: 'agencyfb',
               ),
+              textAlign: TextAlign.center,
             ),
           ),
         ],

@@ -29,6 +29,10 @@ flutter:
     - assets/eventthreeimgg.png
     - assets/refer.png
     - assets/referlo.png
+    - assets/signinImg.png
+    - assets/StriveLogo.jpg
+    - assets/eventtwo.png
+
   fonts:
     - family: agencyfb
       fonts:

@@ -4,7 +4,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:strive/Events/Event2.dart';
 import 'package:strive/Events/Event3.dart';
 import 'package:strive/Events/Event4.dart';
-import 'package:strive/Events/firstEvent.dart';
+import 'package:strive/SignIN&UP/SignIn.dart';
 
 class OnBoard extends StatefulWidget {
   const OnBoard({super.key});
@@ -53,7 +53,7 @@ class _OnBoardState extends State<OnBoard> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => FirstEvent(),
+                                      builder: (context) => const SignIn(),
                                     ),
                                   );
                                 },
