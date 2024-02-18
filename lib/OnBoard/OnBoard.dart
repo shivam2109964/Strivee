@@ -46,28 +46,34 @@ class _OnBoardState extends State<OnBoard> {
                     children: [
                       SmoothPageIndicator(controller: _controller, count: 3),
                       Padding(
-                        padding: const EdgeInsets.only(left: 120),
+                        padding: const EdgeInsets.only(left: 100),
                         child: onLastPage
-                            ? GestureDetector(
-                                onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => const SignIn(),
-                                    ),
-                                  );
-                                },
-                                child: Text(
-                                  "Done",
-                                  style: GoogleFonts.alata(fontSize: 20),
-                                  textAlign: TextAlign.end,
+                            ? Container(
+                                margin: const EdgeInsets.symmetric(
+                                  horizontal: 20.0,
+                                ),
+                               
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => const SignIn(),
+                                      ),
+                                    );
+                                  },
+                                  child: Text(
+                                    "Done",
+                                    style: GoogleFonts.alata(fontSize: 20),
+                                    textAlign: TextAlign.end,
+                                  ),
                                 ),
                               )
                             : GestureDetector(
                                 onTap: () {
                                   _controller.nextPage(
                                       duration:
-                                          const Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 200),
                                       curve: Curves.easeIn);
                                 },
                                 child: Text(

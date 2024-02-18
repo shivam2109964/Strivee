@@ -36,7 +36,7 @@ class EventTwo extends StatelessWidget {
             ),
           ),
           Text(
-            "Refer and Earn",
+            "Enjoy the Game",
             style: GoogleFonts.aclonica(
               fontSize: 20,
             ),
@@ -46,7 +46,7 @@ class EventTwo extends StatelessWidget {
               20,
             ),
             child: Text(
-              "Refer friends and earn up to 700 rupees\nwith every successful referral!",
+              "Immerse yourself in the thrill of gaming and\nenjoy every moment of it!",
               style: TextStyle(
                 fontSize: 14,
                 fontFamily: 'agencyfb',

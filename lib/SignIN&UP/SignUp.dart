@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:strive/SignIN&UP/SignUp.dart';
+import 'package:strive/SignIN&UP/SignIn.dart';
 
-class SignIn extends StatefulWidget {
-  const SignIn({super.key});
+class SignUp extends StatefulWidget {
+  const SignUp({super.key});
   @override
-  State<SignIn> createState() => _SignInState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _SignInState extends State<SignIn> {
+class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     var _mediaQuary = MediaQuery.of(context);
@@ -56,13 +56,13 @@ class _SignInState extends State<SignIn> {
                               padding: EdgeInsets.all(8.0),
                               child: CircleAvatar(
                                 backgroundColor: Colors.amber,
-                                radius: 60,
+                                radius: 50,
                                 backgroundImage:
                                     AssetImage('assets/StriveLogo.jpg'),
                               ),
                             ),
                             Text(
-                              "Sign In ",
+                              "Sign Up ",
                               style: GoogleFonts.aclonica(fontSize: 36),
                             ),
                             Column(
@@ -70,7 +70,10 @@ class _SignInState extends State<SignIn> {
                                 const Padding(
                                   padding: EdgeInsets.all(10),
                                   child: TextField(
-                                    decoration: InputDecoration(
+                                    decoration: 
+                                  
+                                    InputDecoration(
+                                    
                                       fillColor: Color(0xFFF5F5F5),
                                       filled: true,
                                       focusedBorder: OutlineInputBorder(
@@ -95,7 +98,7 @@ class _SignInState extends State<SignIn> {
                                           ),
                                         ),
                                       ),
-                                      hintText: "   Email",
+                                      hintText: "   Your name",
                                       hintStyle: TextStyle(
                                         color: Color(
                                           0xFFA5A5A5,
@@ -132,26 +135,42 @@ class _SignInState extends State<SignIn> {
                                             ),
                                           ),
                                         ),
-                                        hintText: "   Password",
+                                        hintText: "   Email",
                                         hintStyle: TextStyle(
                                             color: Color(0xFFA5A5A5))),
                                   ),
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.only(right: 15),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    children: [
-                                      Text(
-                                        "Forget Password?",
-                                        style: GoogleFonts.inter(
-                                          fontSize: 12,
-                                          color: const Color(
-                                            0xFFA5A5A5,
+                                const Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                        fillColor: Color(0xFFF5F5F5),
+                                        filled: true,
+                                        focusedBorder: OutlineInputBorder(
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(
+                                              25,
+                                            ),
+                                          ),
+                                          borderSide: BorderSide(
+                                            color: Colors.blue,
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                        enabledBorder: OutlineInputBorder(
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(
+                                              25,
+                                            ),
+                                          ),
+                                          borderSide: BorderSide(
+                                            color: Color(
+                                              0xFFF5F5F5,
+                                            ),
+                                          ),
+                                        ),
+                                        hintText: "   Password",
+                                        hintStyle: TextStyle(
+                                            color: Color(0xFFA5A5A5))),
                                   ),
                                 ),
                                 Padding(
@@ -167,7 +186,7 @@ class _SignInState extends State<SignIn> {
                                     ),
                                     onPressed: () {},
                                     child: Text(
-                                      "Sign In",
+                                      "Sign Up",
                                       style: GoogleFonts.inter(
                                           color: Colors.white),
                                     ),
@@ -180,7 +199,7 @@ class _SignInState extends State<SignIn> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text(
-                                        "Don't have a account?",
+                                        "Already have an account?",
                                         style: GoogleFonts.inter(
                                           fontSize: 12,
                                           color: const Color(0xFFA5A5A5),
@@ -191,12 +210,13 @@ class _SignInState extends State<SignIn> {
                                           Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                              builder: (context) => const SignUp(),
+                                              builder: (context) =>
+                                                  const SignIn(),
                                             ),
                                           );
                                         },
                                         child: Text(
-                                          " Sign up",
+                                          " Sign In",
                                           style: GoogleFonts.inter(
                                               fontSize: 12,
                                               fontWeight: FontWeight.bold,
